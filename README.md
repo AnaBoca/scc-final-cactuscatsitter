@@ -6,8 +6,10 @@ Web page published to github-pages at: **[Cactus Cat Sitter](https://anaboca.git
 
 ## 🖥️ Desktop View
 
-![Desktop Screenshot]()
+![Desktop Screenshot](https://github.com/AnaBoca/scc-final-cactuscatsitter/blob/main/readme-views/desktop.png)
 
 ## 📱 Mobile View
 
-![Mobile Screenshot]()
+![Mobile Screenshot](https://github.com/AnaBoca/scc-final-cactuscatsitter/blob/main/readme-views/mobile.jpg)
+
+![Responsive Menu](https://github.com/AnaBoca/scc-final-cactuscatsitter/blob/main/readme-views/responsive-menu.jpg)
