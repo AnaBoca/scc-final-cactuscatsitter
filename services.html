@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Services | Cactus Cat Sitter</title>
+  
+	<link rel="icon" href="favicon.ico" />
+	
+	<meta charset="utf-8">
+  
+	<!-- Required meta tag for resposive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<!-- LINK TO LOCAL STYLESHEET -->
+		<link href="cactus.css" rel="stylesheet">
+		<!-- LINK TO GOOGLE FONTS - SATISFY -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy"/>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+
+	<header class="banner w-100 pt-md-3">
+	
+		<div id="overlay" onclick="off()"> 
+			<div class="d-flex flex-column justify-content-around align-items-center py-5 px-4" id="overlayNav">
+				<a href="index.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="index.html">
+					<img class="img-fluid logo-overlay" src="images/logo_overlay.png" alt="Cactus Cat Sitter"/>
+				</a>
+				<a href="sitters.html">Sitters</a>
+				<a href="contact.html">Contact</a>
+			</div><!-- End overlay nav flex column -->
+		</div><!-- End overlay nav -->
+		
+		<div class="container container-fluid">
+		
+			<button onclick="on()" id ="overlay_btn" class="btn float-right my-4" type="button" data-target="#overlayNav">
+				<span>
+				 <i class="fas fa-bars"></i>
+				</span>
+			</button>
+			
+			<div class="row py-5">
+				<div class="col-12 text-center">
+					
+					<h1 class="text-center">Cactus Cat Sitter</h1>
+					<h2 id="header_h2">The Valley of the Sun's Premier Cat Sitter Service</h2>
+					
+					<nav id="second-nav" class="navbar navbar-expand-md my-3">
+						<div class="container-fluid pt-3 mt-5">
+							<div class="collapse navbar-collapse justify-content-center p-0 m-0" id="MainNav">
+
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="services.html">Services</a>
+									</li>
+									<li class="nav-item img-item">
+										<a class="nav-link" href="index.html">
+											<img class="img-fluid logo-main mx-4" src="images/logo_main.png" alt="Cactus Cat Sitter"/>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="sitters.html">Sitters</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+
+							</div><!-- End main nav collapse -->
+						</div><!-- End container -->
+					</nav>
+					
+				</div><!-- End column -->
+			</div><!-- End row -->
+			
+		</div><!-- End main nav container -->
+		
+	</header>
+	
+	<main>
+	
+		<div class="section section-services-tabs">
+			<div class="container container-fluid">
+			
+				<h2 class="text-center mb-4">Services</h2>
+				
+				<p class="lead">
+					Below are the Cactus Cat Sitter service package listings. 
+					Each contracted visit will include services performed by one of our trained sitters.
+					All sitters at Cactus Cat Sitter travel to the cat owner's home to take care of the cats. 
+					We perform a comprehensive intake visit over the phone prior to a contract.
+					Among gathering information about your cat's in-home pet supplies, such as food and medications, 
+					we make sure to intake all emergency protocol information, such as the cat's preferred vet and emergency clinic.
+				</p>
+				<p class="lead">
+					*In the event that the emergency protocol needs to be enacted, our trained professionals will escort your cat to the agreed-upon facility.
+				</p>
+				<p class="lead">
+					Take a look below for more on our individual service package offerings.
+				</p>
+			
+			</div><!-- End container -->	
+		</div><!-- End contact section -->		
+			
+		<div class="section section-services-content">
+			<div class="container container-fluid">
+
+				<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+							<h3>Silver Standard</h3>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+							<h3>Premium Double</h3>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+							<h3>Comprehensive Gold</h3>
+						</a>
+					</li>
+				</ul>
+				
+				<div class="tab-content pt-5" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="text-center">
+							<i class="certificate fas fa-certificate"></i>
+							<p class="lead my-4">$20.00 USD per day (2-cat limit)</p>
+						</div><!-- Tab pane heading -->
+						<p class="lead">The Silver Standard plan is our most popular service package and includes:</p>
+						<ul class="lead">
+							<li>
+								Free-feed 1X per day
+							</li>
+							<li>
+								Ten minute play session 1X per day
+							</li>
+							<li>
+								Litter scoop 1X per day
+							</li>
+							<li>
+								Fur comb 1X per day
+							</li>
+							<li>
+								Eye booger clean-up 1X per day
+							</li>
+							<li>
+								*Full litter box clean-out every 7 days for 7-day contract or longer
+							</li>
+						</ul>
+					</div><!-- Tab pane -->
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="text-center">
+							<i class="certificate fas fa-award"></i>
+							<p class="lead my-4">$40.00 USD per day (2-cat limit)</p>
+						</div><!-- Tab pane heading -->
+						<p class="lead">The Premium Double plan moves some care services of the Silver Standard plan to two daily visits (separated by 4-hour intervals) and includes:</p>
+						<ul class="lead">
+							<li>
+								Feeding 2X per day
+							</li>
+							<li>
+								Ten minute play session 2X per day
+							</li>
+							<li>
+								Litter scoop 1X per day
+							</li>
+							<li>
+								Fur comb 1X per day
+							</li>
+							<li>
+								Eye booger clean-up 2X per day
+							</li>
+							<li>
+								*Full litter box clean-out every 7 days for 7-day contract or longer
+							</li>
+						</ul>
+					</div><!-- Tab pane -->
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="text-center">
+							<i class="certificate fas fa-crown"></i>
+							<p class="lead my-4">$60.00 USD per day (2-cat limit)</p>
+						</div><!-- Tab pane heading -->
+						<p class="lead">The Comprehensive Gold package has three daily visits (separated by 4 hours intervals) and includes:</p>
+						<ul class="lead">
+							<li>
+								Feeding 3X per day
+							</li>
+							<li>
+								Ten minute play session 2X per day
+							</li>
+							<li>
+								Litter scoop 1X per day
+							</li>
+							<li>
+								Fur comb 1X per day
+							</li>
+							<li>
+								Eye booger clean-up 2X per day
+							</li>
+							<li>
+								Full-room vacuum in primary cat space 1X per day
+							</li>
+							<li>
+								*Full litter box clean-out every 7 days for 7-day contract or longer
+							</li>
+						</ul>
+					</div><!-- Tab pane -->
+				</div><!-- Tab content -->
+			
+			
+			
+			
+			</div><!-- End container -->	
+		</div><!-- End contact section -->	
+	
+	</main>
+	
+	<div id="section-footer" class="section container-fluid">
+	
+		<nav class="navbar navbar-expand social-nav mb-3" id="SocialNav">
+			<div class="container-fluid justify-content-center">
+				
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-youtube-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-pinterest-square"></i>
+						</a>
+					</li>
+				</ul>
+					
+			</div><!-- End container -->
+		</nav><!-- End social nav -->
+			
+			
+		<footer class="text-center">
+			<i class="far fa-copyright"></i> 2019 Ana Boca
+		</footer>
+				
+		
+	</div><!-- End responsive footer -->
+	
+<script src="scripts/carousel.js"></script>
+<script src="scripts/overlay.js"></script>
+
+</body>
+</html>

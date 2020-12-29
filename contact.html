@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact | Cactus Cat Sitter</title>
+  
+	<link rel="icon" href="favicon.ico" />
+	
+	<meta charset="utf-8">
+  
+	<!-- Required meta tag for resposive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<!-- LINK TO LOCAL STYLESHEET -->
+		<link href="cactus.css" rel="stylesheet">
+		<!-- LINK TO GOOGLE FONTS - SATISFY -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy"/>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+
+	<header class="banner w-100 pt-md-3">
+	
+		<div id="overlay" onclick="off()"> 
+			<div class="d-flex flex-column justify-content-around align-items-center py-5 px-4" id="overlayNav">
+				<a href="index.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="index.html">
+					<img class="img-fluid logo-overlay" src="images/logo_overlay.png" alt="Cactus Cat Sitter"/>
+				</a>
+				<a href="sitters.html">Sitters</a>
+				<a href="contact.html">Contact</a>
+			</div><!-- End overlay nav flex column -->
+		</div><!-- End overlay nav -->
+		
+		<div class="container container-fluid">
+		
+			<button onclick="on()" id ="overlay_btn" class="btn float-right my-4" type="button" data-target="#overlayNav">
+				<span>
+				 <i class="fas fa-bars"></i>
+				</span>
+			</button>
+			
+			<div class="row py-5">
+				<div class="col-12 text-center">
+					
+					<h1 class="text-center">Cactus Cat Sitter</h1>
+					<h2 id="header_h2">The Valley of the Sun's Premier Cat Sitter Service</h2>
+					
+					<nav id="second-nav" class="navbar navbar-expand-md my-3">
+						<div class="container-fluid pt-3 mt-5">
+							<div class="collapse navbar-collapse justify-content-center p-0 m-0" id="MainNav">
+
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="services.html">Services</a>
+									</li>
+									<li class="nav-item img-item">
+										<a class="nav-link" href="index.html">
+											<img class="img-fluid logo-main mx-4" src="images/logo_main.png" alt="Cactus Cat Sitter"/>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="sitters.html">Sitters</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+
+							</div><!-- End main nav collapse -->
+						</div><!-- End container -->
+					</nav>
+					
+				</div><!-- End column -->
+			</div><!-- End row -->
+			
+		</div><!-- End main nav container -->
+		
+	</header>
+	
+	<main>
+	
+		<div class="section section-contact">
+			<div class="container container-fluid">
+				<h2 class="text-center mb-4">Contact</h2>
+				
+				<div class="row">
+					
+					<div class="col-md-4 text-center text-white">
+						<p class="lead lead-contact">Need a cat sitter?</p>
+						<p class="lead lead-contact"><i class="fas fa-map-marker-alt"></i> Phoenix, US</p>
+						<p class="lead lead-contact"><i class="fas fa-phone"></i> Phone: 480-123-4567</p>
+						<p class="lead lead-contact"><i class="fas fa-envelope-square"></i> Email: mail@mail.com</p> 
+					</div><!-- End column -->
+					
+					<div class="col-md-8">
+				
+						<form>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+									</div><!-- End column -->
+									<div class="col-sm-6 form-group">
+										<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+									</div><!-- End column -->
+								</div><!-- End row -->
+								
+								<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+								
+								<div class="row mt-3">
+								  <div class="col-sm-12 form-group text-white">
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix" checked> 
+											<label class="form-check-label"> 
+											  Phoenix
+											</label>
+										</div><!-- End form-check -->
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Scottsdale
+											</label>
+										</div><!-- End form-check -->					
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Tempe
+											</label>
+										</div><!-- End form-check -->		
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Mesa
+											</label>
+										</div><!-- End form-check -->	
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Chandler
+											</label>
+										</div><!-- End form-check -->	
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Peoria
+											</label>
+										</div><!-- End form-check -->	
+										<div class="form-check form-check-inline">
+										 <input class="form-check-input" type="radio" name="city" value="Phoenix"> 
+											<label class="form-check-label"> 
+											  Gilbert
+											</label>
+										</div><!-- End form-check -->									 
+									</div><!-- End column -->
+								</div><!-- End row -->
+								
+								<div class="row mt-3">
+									<div class="col-md-12 form-group">
+										<button id="contact-btn" class="btn pull-right font-weight-bold" type="submit">SEND</button>
+									</div><!-- End column -->
+								</div><!-- End row -->
+						</form>
+						
+					</div><!-- End column -->
+					
+				</div><!-- End row -->
+			</div><!-- End container -->	
+		</div><!-- End contact section -->		
+		
+	</main>
+	
+	<div id="section-footer" class="section container-fluid">
+	
+		<nav class="navbar navbar-expand social-nav mb-3" id="SocialNav">
+			<div class="container-fluid justify-content-center">
+				
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-youtube-square"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">
+							<i class="fab fa-pinterest-square"></i>
+						</a>
+					</li>
+				</ul>
+					
+			</div><!-- End container -->
+		</nav><!-- End social nav -->
+			
+			
+		<footer class="text-center">
+			<i class="far fa-copyright"></i> 2019 Ana Boca
+		</footer>
+				
+		
+	</div><!-- End responsive footer -->
+	
+<script src="scripts/carousel.js"></script>
+<script src="scripts/overlay.js"></script>
+
+</body>
+</html>
